@@ -1,15 +1,37 @@
 package com.chen.family;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
+
+import com.chen.family.utils.ViewFinder;
 
 public class MainActivity extends CCActivity
 {
+    private Toolbar toolbar;
+    @Override
+    public void initView(Bundle savedInstanceState)
+    {
+        setContentView(R.layout.activity_main);
+        toolbar= ViewFinder.findView(this,R.id.toolBar);
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
+    public void initValues(Bundle savedInstanceState)
     {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+
+    }
+
+    @Override
+    public void initListeners(Bundle savedInstanceState)
+    {
+        toolbar.setNavigationOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                onBackPressed();
+            }
+        });
     }
 }

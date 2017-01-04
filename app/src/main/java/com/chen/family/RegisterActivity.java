@@ -9,6 +9,6 @@ package com.chen.family;
  * <b><font color='#05B8FD'>联系方式：862530304@qq.com</font></b>
  */
 
-public class RegisterActivity extends CCActivity
+public abstract class RegisterActivity extends CCActivity
 {
 }

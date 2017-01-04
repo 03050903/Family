@@ -16,7 +16,13 @@ import java.util.ArrayList;
 
 public class ActivityQueue
 {
+    /**
+     * ActivityQueue的实例
+     */
     private static ActivityQueue mActivityQuene=new ActivityQueue();
+    /**
+     * 缓存了所有的Activity的List，使用WeakReference，防止出现内存泄漏
+     */
     private ArrayList<WeakReference<Activity>> mActivityList=new ArrayList<>();
     private ActivityQueue()
     {
@@ -38,7 +44,7 @@ public class ActivityQueue
      */
     public void push(Activity activity)
     {
-        WeakReference<Activity> activityWeakReference=new WeakReference<Activity>(activity);
+        WeakReference<Activity> activityWeakReference=new WeakReference<>(activity);
         mActivityList.add(activityWeakReference);
     }
 
@@ -138,7 +144,7 @@ public class ActivityQueue
      */
     private int findActivityFirstIndex(Class<? extends Activity> clazz)
     {
-        int index=0;
+        int index=-1;
         for (WeakReference<Activity> activityWeakReference:mActivityList)
         {
             if (activityWeakReference!=null&&activityWeakReference.get()!=null)
@@ -184,7 +190,7 @@ public class ActivityQueue
     private boolean finishActivitiesBehindIndex(int index)
     {
         //关闭之后的Activity
-        if (index<mActivityList.size())
+        if (index>-1&&index<mActivityList.size())
         {
             while(mActivityList.size()>index+1)
             {

@@ -2,19 +2,34 @@
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+    android:id="@+id/cl_parent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.chen.family.MainActivity">
-
-    <TextView
+   >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="?attr/colorAccent"
+        app:navigationIcon="@mipmap/ic_arrow_back"
+        app:title="@string/page_main"
+        app:titleTextColor="@color/white"
+        >
+    </android.support.v7.widget.Toolbar>
+    <android.support.design.widget.FloatingActionButton
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="@+id/activity_main"
-        app:layout_constraintLeft_toLeftOf="@+id/activity_main"
-        app:layout_constraintRight_toRightOf="@+id/activity_main"
-        app:layout_constraintTop_toTopOf="@+id/activity_main"/>
+        app:fabSize="normal"
+        android:src="@mipmap/ic_main_more"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/dp_32"
+        android:transitionName="login"
+        app:rippleColor="@color/fab_ripple_color"
+        android:layout_height="wrap_content"/>
+
 
 </android.support.constraint.ConstraintLayout>
