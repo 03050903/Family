@@ -1,6 +1,7 @@
 package com.chen.family;
 
 import android.app.Application;
+import android.widget.CheckedTextView;
 
 /**
  * <font color='#9B77B2'>该类的主要用途:</font><br/><font color='#36FC2C'><b>

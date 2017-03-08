@@ -9,5 +9,13 @@
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowContentTransitions">true</item>
     </style>
+    <style name="cc_splash_page" parent="AppTheme">
+        <item name="android:windowBackground">@color/colorAccent</item>
+    </style>s
+    <style name="drawer_header_text" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/menu_text</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
 
 </resources>

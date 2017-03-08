@@ -9,4 +9,9 @@
     <color name="primary_press">#0AC13B</color>
     <color name="toast_bg">#bb12140E</color>
     <color name="fab_ripple_color">#CCFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="red">#FF0000</color>
+    <color name="main_drawer_header_bg">#00ff00</color>
+    <color name="base_bg">#f9f9f9</color>
+    <color name="menu_text">#2B2B2B</color>
 </resources>

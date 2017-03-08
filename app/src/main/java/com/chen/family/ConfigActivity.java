@@ -1,6 +1,7 @@
 package com.chen.family;
 
 import android.os.Bundle;
+import android.view.View;
 
 /**
  * <font color='#9B77B2'>该类的主要用途:</font><br/><font color='#36FC2C'><b>
@@ -14,9 +15,9 @@ import android.os.Bundle;
 public class ConfigActivity extends CCActivity
 {
     @Override
-    public void initView(Bundle savedInstanceState)
+    public View initView(Bundle savedInstanceState)
     {
-
+        return null;
     }
 
     @Override

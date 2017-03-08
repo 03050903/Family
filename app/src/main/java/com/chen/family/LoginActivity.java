@@ -29,13 +29,13 @@ public class LoginActivity extends CCActivity
     private EditText userPwdEditText;
     private FloatingActionButton loginButton;
     @Override
-    public void initView(Bundle savedInstanceState)
+    public View initView(Bundle savedInstanceState)
     {
         setContentView(R.layout.activity_login);
         userNameEditText=findView(R.id.et_user_name);
         userPwdEditText=findView(R.id.et_user_pwd);
         loginButton=findView(R.id.fab_login);
-
+        return null;
     }
 
     @Override

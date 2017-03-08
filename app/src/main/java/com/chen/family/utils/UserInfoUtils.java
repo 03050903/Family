@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.text.TextUtils;
 
 import com.chen.family.MyApplication;
+import com.chen.family.model.UserModel;
 
 /**
  * <font color='#9B77B2'>该类的主要用途:</font><br/><font color='#36FC2C'><b>

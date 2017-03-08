@@ -6,4 +6,15 @@
     <string name="input_user_name">请输入用户名</string>
     <string name="input_user_pwd">请输入密码</string>
     <string name="page_main">首页</string>
+    <string name="cc_splash_family">有家      真好</string>
+    <string name="home_en">HOME</string>
+    <string name="en_family">FAMILY</string>
+    <string name="happy_days">幸福时光</string>
+    <string name="family_circle">好家园</string>
+    <string name="my_family">我爱我家</string>
+    <string name="family_note">我的记忆</string>
+    <string name="family_member">亲亲家人</string>
+    <string name="family_relation">源源相传</string>
+    <string name="setting">设置</string>
+    <string name="family">家</string>
 </resources>

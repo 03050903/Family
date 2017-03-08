@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@mipmap/ic_my_family"
+        android:title="@string/my_family"/>
+    <item
+        android:id="@+id/menu_photo"
+        android:icon="@mipmap/ic_happy_days"
+        android:title="@string/happy_days"/>
+    <item
+        android:id="@+id/menu_circle"
+        android:icon="@mipmap/ic_family_circle"
+        android:title="@string/family_circle"/>
+    <item
+        android:id="@+id/menu_member"
+        android:icon="@mipmap/ic_family_member"
+        android:title="@string/family_member"/>
+    <item
+        android:id="@+id/menu_relation"
+        android:icon="@mipmap/ic_family_relation"
+        android:title="@string/family_relation"/>
+
+    <item
+        android:id="@+id/menu_note"
+        android:icon="@mipmap/ic_family_note"
+        android:title="@string/family_note"/>
+    <item
+        android:id="@+id/menu_setting"
+        android:icon="@mipmap/ic_setting"
+        android:title="@string/setting"/>
+</menu>

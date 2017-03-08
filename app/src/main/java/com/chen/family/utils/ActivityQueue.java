@@ -58,7 +58,17 @@ public class ActivityQueue
             mActivityList.remove(mActivityList.size()-1);
         }
     }
-
+    public void pop(Activity activity)
+    {
+        if (mActivityList.size()>0)
+        {
+            WeakReference<Activity> activityWeakReference = mActivityList.get(mActivityList.size() - 1);
+            if (activityWeakReference!=null&&activity==activityWeakReference.get())
+            {
+                mActivityList.remove(mActivityList.size()-1);
+            }
+        }
+    }
     /**
      * 开启Activity，打开该Activity类型的第一个缓存的实例,该Activity之后的Activity都会被清除
      * @param clazz
