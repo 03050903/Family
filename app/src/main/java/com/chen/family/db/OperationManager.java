@@ -65,6 +65,7 @@ public class OperationManager
                     try
                     {
                         DBOperation take = mOperationQueue.take();
+                        DBManager manager=new DBManager(null);
                         SQLiteDatabase dataBase = DBManager.getInstance().getDataBase(take.isRead());
                         take.doOperation(dataBase);
                         Thread.sleep(100);

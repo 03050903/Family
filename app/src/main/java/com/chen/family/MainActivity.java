@@ -8,7 +8,14 @@ import android.view.View;
 import com.chen.family.fragment.CircleFragment;
 import com.chen.family.utils.ViewFinder;
 import com.yalantis.phoenix.PullToRefreshView;
-
+/**
+ * <font color='#9B77B2'>该类的主要用途:</font><br/><font color='#36FC2C'><b>
+ * <p>主页面，显示一个App的首页</p>
+ * <b/></font><br/><hr/>
+ * <b><font color='#05B8FD'>作者: C&C</font></b><br/><br/>
+ * <b><font color='#05B8FD'>创建时间：2017/1/4</font></b><br/><br/>
+ * <b><font color='#05B8FD'>联系方式：862530304@qq.com</font></b>
+ */
 public class MainActivity extends CCActivity
 {
     private DrawerLayout drawerLayout;

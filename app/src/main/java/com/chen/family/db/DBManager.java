@@ -36,6 +36,11 @@ class DBManager extends SQLiteOpenHelper
         }
         return mDataBaseManager;
     }
+
+    /**
+     * 数据库管理器的构造类，不建议直接调用该方法，建议使用getInstance方法
+     * @param context
+     */
     public DBManager(Context context)
     {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
