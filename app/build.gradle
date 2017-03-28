@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'blockcanaryex'
 
 android {
     compileSdkVersion rootProject.ext.compileSdk
@@ -30,6 +31,8 @@ dependencies {
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.3'
     //显示圆形的头像
     compile 'de.hdodenhof:circleimageview:2.1.0'
+    //用于统计方法的执行时间
+    compile 'com.letv.sarrsdesktop:BlockCanaryExJRT:'+rootProject.ext.blockCanary
     //用于启动页显示的一个动画
     compile 'me.wangyuwei:ParticleView:'+rootProject.ext.ParticleView
     //使用metarial design包

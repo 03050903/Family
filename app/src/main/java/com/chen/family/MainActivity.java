@@ -31,8 +31,20 @@ public class MainActivity extends CCActivity
     {
 
     }
+    private void sleep()
+    {
+        try
+        {
+            Thread.sleep(2500);
+        }catch(Exception e)
+        {
+
+        }
+
+    }
     private void showPage()
     {
+        sleep();
         getSupportFragmentManager().beginTransaction().replace(R.id.fl_content,new CircleFragment()).commitAllowingStateLoss();
     }
 }
