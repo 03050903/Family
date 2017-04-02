@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Family2.iml" filepath="$PROJECT_DIR$/Family2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Family.iml" filepath="$PROJECT_DIR$/Family.iml" />
+      <module fileurl="file://D:\develop\code\git\Family\Family2.iml" filepath="D:\develop\code\git\Family\Family2.iml" />
+      <module fileurl="file://D:\develop\code\git\Family\app\app.iml" filepath="D:\develop\code\git\Family\app\app.iml" />
     </modules>
   </component>
 </project>
