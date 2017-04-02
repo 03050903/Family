@@ -3,8 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Family.iml" filepath="$PROJECT_DIR$/Family.iml" />
+<<<<<<< HEAD
       <module fileurl="file://D:\develop\code\git\Family\Family2.iml" filepath="D:\develop\code\git\Family\Family2.iml" />
       <module fileurl="file://D:\develop\code\git\Family\app\app.iml" filepath="D:\develop\code\git\Family\app\app.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+>>>>>>> 631c817ccf1f63b8c1b7998055c313a27db30df9
     </modules>
   </component>
 </project>
