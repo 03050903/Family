@@ -6,22 +6,13 @@
     android:fitsSystemWindows="true"
     android:background="@color/colorPrimary"
     android:layout_height="@dimen/dp_250">
-   <!-- <ImageView
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_margin="@dimen/dp_8"
-        android:id="@+id/img_setting"
-        android:src="@mipmap/ic_setting"
-        android:padding="@dimen/dp_8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>-->
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/img_user_head"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="@dimen/dp_32"
-        android:src="@mipmap/ic_launcher"
+        android:src="@drawable/default_image"
         app:civ_border_color="@color/white"
         app:civ_border_width="@dimen/dp_2"
         android:layout_width="@dimen/dp_80"
@@ -30,7 +21,6 @@
         android:id="@+id/tv_user_name"
         android:textColor="@color/white"
         android:textSize="@dimen/sp_18"
-        android:text="这个是我的用户名"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/img_user_head"

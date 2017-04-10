@@ -17,4 +17,8 @@
     <string name="family_relation">源源相传</string>
     <string name="setting">设置</string>
     <string name="family">家</string>
+    <string name="family_more">更多</string>
+    <string name="user_not_login">请登录</string>
+    <string name="family_info">简介</string>
+    <string name="family_photo">照片</string>
 </resources>

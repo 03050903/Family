@@ -15,6 +15,17 @@ public class UserModel
 {
     private String userName;
     private String userPwd;
+    private String headUrl;
+
+    public String getHeadUrl()
+    {
+        return headUrl;
+    }
+
+    public void setHeadUrl(String headUrl)
+    {
+        this.headUrl = headUrl;
+    }
 
     public String getUserName()
     {

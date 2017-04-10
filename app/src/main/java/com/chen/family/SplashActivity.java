@@ -10,10 +10,10 @@ import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
 import android.view.View;
 import android.widget.ImageView;
+
+import com.chen.family.cache.UserInfoUtils;
 import com.chen.family.model.AnimatorAdapter;
-import com.chen.family.utils.ActivityUtils;
 import com.chen.family.utils.DLog;
-import com.chen.family.utils.UserInfoUtils;
 import com.chen.god.utils.DensityUtils;
 import com.chen.god.utils.ScreenUtils;
 import me.wangyuwei.particleview.ParticleView;

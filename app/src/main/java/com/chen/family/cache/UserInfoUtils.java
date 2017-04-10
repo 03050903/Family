@@ -1,10 +1,6 @@
-package com.chen.family.utils;
+package com.chen.family.cache;
 
-import android.content.Context;
-import android.content.SharedPreferences;
 import android.text.TextUtils;
-
-import com.chen.family.MyApplication;
 import com.chen.family.model.UserModel;
 
 /**
@@ -24,6 +20,7 @@ public class UserInfoUtils
      * 实例化一个实例
      */
     private static UserInfoUtils mUserInfoUtils=new UserInfoUtils();
+
     private UserModel mUserModel;
 
     /**
@@ -44,7 +41,7 @@ public class UserInfoUtils
     /**
      * 获取当前的用户
      */
-    public UserModel getCuurentUser()
+    public UserModel getCurrentUser()
     {
         return mUserModel;
     }
@@ -63,7 +60,7 @@ public class UserInfoUtils
      */
     private void createUserModelFromLocal()
     {
-        String userModelJson=getString(CONFIG_FILE_NAME,USER_MODEL_JSON);
+        String userModelJson=PreferenceUtils.getString(CONFIG_FILE_NAME,USER_MODEL_JSON);
         if (!TextUtils.isEmpty(userModelJson))
         {
             mUserModel=UserModel.localFromJson(userModelJson);
@@ -72,39 +69,7 @@ public class UserInfoUtils
     }
     public String getString(String paramName)
     {
-        return getString(CONFIG_FILE_NAME,paramName);
-    }
-
-    /**
-     * 获取字符串
-     * @param configFileName        配置文件的名称
-     * @param paramName             获取的参数的名称
-     * @return
-     */
-    public String getString(String configFileName,String paramName)
-    {
-        return getSharedPreferences(configFileName).getString(paramName,null);
-    }
-
-    /**
-     * 获取Editor对象
-     * @param configFileName    配置文件名
-     * @return
-     */
-    private SharedPreferences.Editor getEditor(String configFileName)
-    {
-        return getSharedPreferences(configFileName).edit();
-    }
-
-    /**
-     * 获取SharedPreferences
-     * @param configFileName    配置文件名
-     * @return
-     */
-    private SharedPreferences getSharedPreferences(String configFileName)
-    {
-        SharedPreferences preferences= MyApplication.getInstance().getSharedPreferences(configFileName, Context.MODE_PRIVATE);
-        return preferences;
+        return PreferenceUtils.getString(CONFIG_FILE_NAME,paramName);
     }
 
     /**
@@ -116,7 +81,7 @@ public class UserInfoUtils
         mUserModel=model;
         if (mUserModel!=null)
         {
-            getEditor(CONFIG_FILE_NAME).putString(USER_MODEL_JSON,mUserModel.toJson()).apply();
+            PreferenceUtils.getEditor(CONFIG_FILE_NAME).putString(USER_MODEL_JSON,mUserModel.toJson()).apply();
         }
     }
 
@@ -126,7 +91,7 @@ public class UserInfoUtils
     public void loginOut()
     {
         mUserModel=null;
-        getEditor(CONFIG_FILE_NAME).clear().apply();
+        PreferenceUtils.getEditor(CONFIG_FILE_NAME).clear().apply();
     }
 
 }

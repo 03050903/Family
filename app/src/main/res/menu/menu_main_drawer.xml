@@ -27,6 +27,10 @@
         android:icon="@mipmap/ic_family_note"
         android:title="@string/family_note"/>
     <item
+        android:id="@+id/menu_more"
+        android:icon="@mipmap/ic_more"
+        android:title="@string/family_more"/>
+    <item
         android:id="@+id/menu_setting"
         android:icon="@mipmap/ic_setting"
         android:title="@string/setting"/>
