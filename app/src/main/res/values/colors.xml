@@ -14,4 +14,5 @@
     <color name="main_drawer_header_bg">#00ff00</color>
     <color name="base_bg">#f9f9f9</color>
     <color name="menu_text">#2B2B2B</color>
+    <color name="img_brower_bg">#bb000000</color>
 </resources>

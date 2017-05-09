@@ -1,7 +1,8 @@
-package com.chen.family;
+package com.chen.family.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+
 import com.chen.family.imp.PageInitImp;
 
 

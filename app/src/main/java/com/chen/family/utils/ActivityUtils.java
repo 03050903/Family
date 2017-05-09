@@ -1,12 +1,7 @@
 package com.chen.family.utils;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-
-import com.chen.family.LoginActivity;
-
-import java.util.HashMap;
 
 /**
  * <font color='#9B77B2'>该类的主要用途:</font><br/><font color='#36FC2C'><b>

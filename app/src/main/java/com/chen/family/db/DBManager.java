@@ -4,8 +4,6 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.chen.family.MyApplication;
-
 /**
  * <font color='#9B77B2'>该类的主要用途:</font><br/><font color='#36FC2C'><b>
  * <p></p>

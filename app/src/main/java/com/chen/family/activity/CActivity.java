@@ -1,4 +1,4 @@
-package com.chen.family;
+package com.chen.family.activity;
 
 import android.content.Context;
 import android.os.Bundle;

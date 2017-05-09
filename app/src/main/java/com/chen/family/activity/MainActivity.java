@@ -1,4 +1,4 @@
-package com.chen.family;
+package com.chen.family.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -6,8 +6,8 @@ import android.support.v4.widget.DrawerLayout;
 import android.view.View;
 import android.widget.TextView;
 
+import com.chen.family.R;
 import com.chen.family.cache.UserInfoUtils;
-import com.chen.family.fragment.CircleFragment;
 import com.chen.family.fragment.FamilyFragment;
 import com.chen.family.model.UserModel;
 import com.chen.family.utils.ImageUtils;

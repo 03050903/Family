@@ -1,4 +1,5 @@
-package com.chen.family;
+package com.chen.family.activity;
+
 import android.animation.Animator;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
@@ -11,11 +12,13 @@ import android.support.constraint.ConstraintLayout;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.chen.family.R;
 import com.chen.family.cache.UserInfoUtils;
 import com.chen.family.model.AnimatorAdapter;
 import com.chen.family.utils.DLog;
 import com.chen.god.utils.DensityUtils;
 import com.chen.god.utils.ScreenUtils;
+
 import me.wangyuwei.particleview.ParticleView;
 
 /**

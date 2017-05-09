@@ -4,15 +4,13 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.chen.family.MyApplication;
 import com.chen.family.R;
 import com.chen.family.fragment.FamilyInfoFragment;
 import com.chen.family.fragment.FamilyPhotoFragment;
 import com.chen.family.fragment.UnCompleteFragment;
+import com.chen.family.utils.DLog;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -32,7 +30,9 @@ public class FamilyAdapter extends FragmentPagerAdapter
 
     public FamilyAdapter(FragmentManager fm)
     {
+
         super(fm);
+        DLog.i("初始化adapter");
         titleArray = MyApplication.getInstance().getResources().getStringArray(R.array.main_family);
         list = new HashMap<>();
     }
@@ -46,6 +46,7 @@ public class FamilyAdapter extends FragmentPagerAdapter
             fragment = getFragmentByPosition(position);
             list.put(titleArray[position], fragment);
         }
+        DLog.i("fragment is:"+fragment);
         return fragment;
     }
 

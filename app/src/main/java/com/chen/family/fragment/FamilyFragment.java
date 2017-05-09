@@ -6,6 +6,7 @@ import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
+import android.support.v4.widget.NestedScrollView;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -30,6 +31,7 @@ public class FamilyFragment extends BaseFragment
     private ImageView backImageView;
     private ViewPager viewPager;
     private TabLayout tabLayout;
+//    private NestedScrollView scrollView;
     @Override
     public View initView(Bundle savedInstanceState)
     {
@@ -38,12 +40,14 @@ public class FamilyFragment extends BaseFragment
         collapsingToolbarLayout=ViewFinder.findView(view,R.id.ctl_toolbar);
         viewPager=ViewFinder.findView(view,R.id.viewPager);
         tabLayout=ViewFinder.findView(view,R.id.tabLayout);
+//        scrollView=ViewFinder.findView(view,R.id.scrollView);
         return view;
     }
 
     @Override
     public void initValues(Bundle savedInstanceState)
     {
+//        scrollView.setFillViewport(true);
         collapsingToolbarLayout.setCollapsedTitleTextColor(Color.WHITE);
         collapsingToolbarLayout.setExpandedTitleColor(Color.WHITE);
         ImageUtils.getInstance().loadImage(backImageView,ImageUtils.getPathFromAssets("test_family.jpg"));
